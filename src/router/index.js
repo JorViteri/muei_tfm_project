@@ -21,7 +21,7 @@ const routes = [
     component: VideoVisualization
   },
   {
-    path: '/streaming',
+    path: '/video_recording',
     name: 'StreamingView',
     component: StreamingView
   },

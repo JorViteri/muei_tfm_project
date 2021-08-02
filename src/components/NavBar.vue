@@ -62,13 +62,13 @@ export default {
       links: [
         {
           icon: 'mdi-home',
-          text: 'Inicio',
+          text: 'Main',
           route: '/'
         },
         {
           icon: 'mdi-video-vintage',
-          text: 'Live Streaming',
-          route: '/streaming'
+          text: 'Video Recording',
+          route: '/video_recording'
         },
         {
           icon: 'mdi-video',
