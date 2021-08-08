@@ -1,6 +1,6 @@
 <?php
 include "/etc/server/config.php";
-
+include "/etc/server/sql_cmd.php";
 
 $mysqli = mysqli_init();
 if (!$mysqli) {

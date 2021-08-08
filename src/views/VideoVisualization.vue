@@ -207,7 +207,7 @@ export default {
           video_duration: element.video_duration,
           createdAt: element.upload_date,
           id: element.video_id.toString(),
-          processed: element.processed,
+          processed: 1,
           video_views: element.view_count.toString()
         };
         this.videos.push(video);

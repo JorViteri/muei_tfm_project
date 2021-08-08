@@ -196,11 +196,11 @@ export default {
         const util = require('util');
         const ysFixWebmDuration = require('fix-webm-duration');
         const promiseYsFixedWebmDuration = util.promisify(ysFixWebmDuration);
-        var duration = Date.now() - this.startTime;
+        let duration = Date.now() - this.startTime;
         console.log('DURATION: ', duration);
         console.log('Recorder stopped: ', event);
         console.log('Recorded Blobs: ', this.recordedBlobs);
-        var buggyBlob = new Blob(this.recordedBlobs, { type: 'video/webm' });
+        let buggyBlob = new Blob(this.recordedBlobs, { type: 'video/webm' });
         promiseYsFixedWebmDuration(buggyBlob, duration)
           .then((newBlob) => {
             this.fixedBlob = newBlob;

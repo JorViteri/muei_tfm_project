@@ -1,6 +1,8 @@
 <?php
 include "/etc/server/config.php";
 include "/etc/server/cmd_conf.php";
+include "/etc/server/sql_cmd.php";
+
 $result_msg = "There has been an error";
 
 $arr_file_types = ['video/webm','video/mp4'];

@@ -5,6 +5,7 @@
  */
 
 include "/etc/server/config.php";
+
 require_once __DIR__ . '/vendor/autoload.php';
 use PhpAmqpLib\Connection\AMQPStreamConnection;
 
@@ -42,6 +43,8 @@ echo ' [*] Waiting for messages. To exit press CTRL+C', "\n";
 $callback = function ($msg) {
     include "/etc/server/config.php";
     include "/etc/server/cmd_conf.php";
+    include "/etc/server/sql_cmd.php";
+
     echo " [x] Received ", $msg->body, "\n";
     $job = json_decode($msg->body);
     $video_id = $job->video_id;
