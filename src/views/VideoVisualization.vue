@@ -9,6 +9,7 @@
           large
         >
           <video-player
+            v-if="manifestUrl != ''"
             :license-server="licenseServer"
             :manifest-url="manifestUrl"
             :poster-url="posterUrl"
@@ -239,9 +240,11 @@ export default {
       }, this.intervalTime);
     }
   },
-  mounted() {
+  created() {
     this.selectId();
     this.randomSelect();
+  },
+  mounted() {
     this.graphLoop();
   },
   beforeDestroy() {

@@ -46,7 +46,7 @@
           v-on:click="saveRecording()"
           ref="save"
           :disabled="isDisabled('save')"
-          >Save</v-btn
+          >Upload</v-btn
         >
         <v-btn
           v-on:click="switchVideo()"

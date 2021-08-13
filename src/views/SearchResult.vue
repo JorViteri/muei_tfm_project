@@ -103,7 +103,7 @@ export default {
       this.loading = false;
     }
   },
-  mounted() {
+  created() {
     console.log('Se hace la peticion a BD');
     this.searchQuery();
   }
