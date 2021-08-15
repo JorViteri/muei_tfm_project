@@ -222,7 +222,7 @@ export default {
     updateBandwidthGraph: function(currentBandwidth) {
       console.log('Desde la vista, lanzamos el Watch del BandwidthGraph');
       console.log(currentBandwidth);
-      this.currentBandwidth = currentBandwidth; //TODO no se actualiza al repetir valores, porque esto únicamente funciona si el valor cambia respecto al anterior!!
+      this.currentBandwidth = currentBandwidth;
       this.update = !this.update;
     },
     videoIsBuffering: function(value) {
